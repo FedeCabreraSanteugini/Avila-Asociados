@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="Scripts.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <body>
+  <!-- Header / Hero -->
+  <header id="hero">
+    <div class="container">
+      <h1>Avila & Asociados</h1>
+      <h3>Gestion Contable</h3>
+      <p>Asesoramiento y gestión integral para empresas uruguayas</p>
+      <a href="#servicios" class="btn">Conoce nuestros servicios</a>
+    </div>
+  </header>
+
+  <!-- Sección: Quiénes Somos / Nuestra Misión -->
+  <section id="nosotros" class="seccion">
+    <div class="container">
+      <h2>Quiénes Somos</h2>
+      <p>Somos un estudio conformado por profesionales con amplia experiencia en contabilidad, impuestos, recursos humanos y gestión empresarial. Nos enfocamos en brindar soluciones adaptadas al contexto jurídico y tributario de Uruguay.</p>
+      <p>Nuestra misión es acompañar a empresas de todos los tamaños para que cumplan con sus obligaciones y optimicen sus recursos.</p>
+    </div>
+  </section>
+
+  <!-- Sección: Servicios -->
+  <section id="servicios" class="seccion">
+    <div class="container">
+      <h2>Servicios</h2>
+      <div class="grid-servicios">
+      
+        <div class="servicio-item">
+          <h3>Impuestos y asesoramiento fiscal</h3>
+          <p>Liquidación de impuestos (IRAE, IVA, contribuciones), declaraciones juradas.</p>
+        </div>
+        <div class="servicio-item">
+          <h3>Laboral y Recursos Humanos</h3>
+          <p>Liquidación de sueldos, aportes al BPS, asesoramiento laboral.</p>
+        </div>
+        <div class="servicio-item">
+          <h3>Trámites y cumplimiento normativo</h3>
+          <p>Inscripciones, habilitaciones, facturación electrónica, presentación ante organismos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Por qué elegirnos / Diferenciales -->
+  <section id="diferenciales" class="seccion">
+    <div class="container">
+      <h2>¿Por qué elegirnos?</h2>
+      <ul class="lista-diferenciales">
+        <li>Atención personalizada y cercana</li>
+        <li>Actualización constante en normativa local</li>
+        <li>Compromiso con la confidencialidad y transparencia</li>
+        <li>Soluciones integrales para empresas de todo tamaño</li>
+        <li>Enfoque proactivo: anticipamos obligaciones</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Sección: Testimonios / Casos de éxito -->
+  <section id="testimonios" class="seccion">
+    <div class="container">
+      <h2>Lo que dicen nuestros clientes</h2>
+      <div class="testimonios-grid">
+        <blockquote>
+          “Nos dan tranquilidad en los temas impositivos y laborales, su atención es rápida y clara.”<br>
+          <cite>— Empresa X, Montevideo</cite>
+        </blockquote>
+        <blockquote>
+          “Desde que contratamos el estudio mejoramos nuestra gestión financiera y evitamos multas.”<br>
+          <cite>— Pyme Y, Punta del Este</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Equipo / Profesionales -->
+  <section id="equipo" class="seccion">
+    <div class="container">
+      <h2>Nuestro equipo</h2>
+      <p>Conformado por contadores públicos, auditores, especialistas tributarios y en gestión empresarial.</p>
+      <div class="grid-equipo">
+        <div class="miembro">
+          <img src="ruta-foto1.jpg" alt="Nombre Apellido">
+          <h4>Nombre Apellido</h4>
+          <p>Contador Público</p>
+        </div>
+        <div class="miembro">
+          <img src="ruta-foto2.jpg" alt="Nombre Apellido">
+          <h4>Nombre Apellido</h4>
+          <p>Especialista Fiscal</p>
+        </div>
+        <!-- más miembros según corresponda -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Noticias / Novedades / Blog -->
+  <section id="novedades" class="seccion">
+    <div class="container">
+      <h2>Noticias & Novedades</h2>
+      <div class="grid-noticias">
+        <article class="noticia">
+          <h3>Última reforma tributaria en Uruguay</h3>
+          <p>Breve descripción de los cambios...</p>
+          <a href="#">Leer más</a>
+        </article>
+        <article class="noticia">
+          <h3>Nuevo régimen de facturación electrónica</h3>
+          <p>Aspectos clave que debe conocer...</p>
+          <a href="#">Leer más</a>
+        </article>
+        <!-- más noticias -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Contacto / Ubicación -->
+  <section id="contacto" class="seccion">
+    <div class="container">
+      <h2>Contacto</h2>
+      <div class="contacto-datos">
+        <div class="datos-oficina">
+          <h3>Oficina principal</h3>
+          <p>Dirección: Calle ___, Ciudad, Departamento, Uruguay</p>
+          <p>Teléfono: +598 XX XXX XXXX</p>
+          <p>Email: info@estudiocontable.uy</p>
+        </div>
+        <div class="formulario-contacto">
+          <form action="enviar_contacto.php" method="post">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="telefono">Teléfono</label>
+            <input type="text" id="telefono" name="telefono">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <p>&copy; 2025 Estudio Contable [Nombre]. Todos los derechos reservados.</p>
+      <p>Dirección · Teléfono · Email</p>
+      <div class="redes">
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="Instagram">Instagram</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</body>
+</html>
