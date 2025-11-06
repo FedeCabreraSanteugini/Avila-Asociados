@@ -3,25 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Avila & Asociados</title>
-  
+  <title>Ávila & Asociados</title>
+  <link rel="icon" href="Logonegro.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <link rel="stylesheet" href="Style.css">
-
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+  <link href="Style.css" rel="stylesheet">
 </head>
 <body>
 
-  <header id="encabezado" class="animate__animated animate__fadeInUp">
-    <div class="container text-center py-5">
-      <h1>Avila & Asociados</h1>
-      <h3>Gestión Contable</h3>
-      <p>Asesoramiento y gestión integral para empresas uruguayas</p>
-      <a href="#servicios" class="btn btn-primary mt-3">Conoce nuestros servicios</a>
-    </div>
-  </header>
+  <!-- NAVBAR -->
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 
-  <section id="nosotros" class="seccion py-5 animate__animated animate__fadeInUp">
+    <div class="container">
+      <a class="navbar-brand" href="#encabezado">
+        <img src="Logoblanco2.png" alt="Logo Ávila & Asociados" height="80">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#nosotros">Sobre nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#diferenciales">¿Por qué elegirnos?</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- QUIÉNES SOMOS -->
+  <section id="nosotros" class="seccion animate__animated">
     <div class="container">
       <h2>Quiénes Somos</h2>
       <p>Somos un estudio conformado por profesionales con amplia experiencia en contabilidad, impuestos, recursos humanos y gestión empresarial. Nos enfocamos en brindar soluciones adaptadas al contexto jurídico y tributario de Uruguay.</p>
@@ -29,54 +45,117 @@
     </div>
   </section>
 
-  <section id="servicios" class="seccion py-5 bg-light animate__animated animate__fadeInUp">
-    <div class="container">
-      <h2 class="mb-4">Servicios</h2>
+  <!-- SERVICIOS -->
+<section id="servicios" class="seccion bg-light animate__animated">
+  <div class="container">
+    <h2 class="text-center mb-4">Servicios</h2>
 
-      <div class="accordion animate__animated animate__fadeInUp" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Impuestos y asesoramiento fiscal
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              Liquidación de impuestos (IRAE, IVA, contribuciones), declaraciones juradas.
-            </div>
+    <div class="accordion" id="accordionExample">
+
+      <!-- Contabilidad e Impuestos -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+            Contabilidad e Impuestos
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul>
+              <li>Declaraciones juradas y liquidación de impuestos (IRAE, IVA, IRPF, IRNR, IP)</li>
+              <li>Planificación y optimización fiscal</li>
+              <li>Asesoramiento permanente en normativa tributaria</li>
+              <li>Elaboración de estados contables y análisis financiero</li>
+            </ul>
           </div>
         </div>
+      </div>
 
-        <div class="accordion-item animate__animated animate__fadeInUp">
-          <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Trámites y cumplimiento normativo
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              Inscripciones, habilitaciones, facturación electrónica, presentación ante organismos.
-            </div>
+      <!-- Gestoría Administrativa y Empresarial -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            Gestoría Administrativa y Empresarial
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul>
+              <li>Registro, constitución y clausura de empresas ante DGI, BPS, BSE y MTSS</li>
+              <li>Implementación de factura electrónica y POS</li>
+              <li>Gestión y actualización en RUPE</li>
+              <li>Obtención y renovación de certificados únicos, especiales y de crédito</li>
+              <li>Tramitación ante organismos públicos y privados</li>
+            </ul>
           </div>
         </div>
+      </div>
 
-        <div class="accordion-item animate__animated animate__fadeInUp">
-          <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Laboral y Recursos Humanos
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              Liquidación de sueldos, aportes al BPS, asesoramiento laboral y gestión de nóminas.
-            </div>
+      <!-- Laboral y Recursos Humanos -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+            Laboral y Recursos Humanos
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul>
+              <li>Liquidación de sueldos, jornales y aguinaldos</li>
+              <li>Emisión de recibos y e-recibos</li>
+              <li>Control de normativa laboral y convenios colectivos</li>
+              <li>Cálculo de aportes y contribuciones</li>
+              <li>Asesoramiento en relaciones laborales, licencias, subsidios e indemnizaciones</li>
+              <li>Administración de tercerizaciones y regularizaciones ante BPS y MTSS</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gestión de Obras -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+            Gestión de Obras
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul>
+              <li>Inscripción, desgravación y regularización de obras</li>
+              <li>Cálculo y gestión de aportes y contribuciones</li>
+              <li>Asesoramiento técnico y administrativo en materia de obra</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Asesoramiento Societario -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+            Asesoramiento Societario
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul>
+              <li>Constitución de sociedades (S.A.S, S.R.L, S.A y otras figuras jurídicas)</li>
+              <li>Elaboración de contratos y estatutos sociales</li>
+              <li>Trámites de inscripción, modificación y actualización societaria</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-  </section>
 
-  <section id="diferenciales" class="seccion py-5 animate__animated animate__fadeInUp">
+    </div>
+  </div>
+</section>
+
+
+  <!-- DIFERENCIALES -->
+  <section id="diferenciales" class="seccion animate__animated">
     <div class="container">
       <h2>¿Por qué elegirnos?</h2>
       <ul class="lista-diferenciales">
@@ -89,67 +168,68 @@
     </div>
   </section>
 
-  <section id="testimonios" class="seccion py-5 bg-light animate__animated animate__fadeInUp">
+  <!-- TESTIMONIOS -->
+  <section id="testimonios" class="seccion bg-light animate__animated">
     <div class="container">
       <h2>Lo que dicen nuestros clientes</h2>
       <div class="row mt-4">
-        <div class="col-md-6">
+        <div class="col-md-6 mb-3">
           <blockquote>“Nos dan tranquilidad en los temas impositivos y laborales, su atención es rápida y clara.”<br><cite>— Empresa X, Montevideo</cite></blockquote>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 mb-3">
           <blockquote>“Desde que contratamos el estudio mejoramos nuestra gestión financiera y evitamos multas.”<br><cite>— Pyme Y, Punta del Este</cite></blockquote>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contacto" class="seccion py-5 animate__animated animate__fadeInUp">
-    <div class="container">
-      <h2>Contacto</h2>
-      <div class="row mt-4">
-        <div class="col-md-6">
-          <p><strong>Dirección:</strong> Ruta 73 S/N, Las Flores, Maldonado, Uruguay</p>
-          <p><strong>Teléfono:</strong> +598 98 699 921</p>
-          <p><strong>Email:</strong> AldanaAvila.tor@gmail.com</p>
-        </div>
-        <div class="col-md-6">
-          <form action="enviar_contacto.php" method="post">
-            <div class="mb-3">
-              <label for="nombre" class="form-label">Nombre</label>
-              <input type="text" id="nombre" name="nombre" class="form-control" required>
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" id="email" name="email" class="form-control" required>
-            </div>
-            <div class="mb-3">
-              <label for="telefono" class="form-label">Teléfono</label>
-              <input type="text" id="telefono" name="telefono" class="form-control">
-            </div>
-            <div class="mb-3">
-              <label for="mensaje" class="form-label">Mensaje</label>
-              <textarea id="mensaje" name="mensaje" rows="4" class="form-control" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary w-100">Enviar</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- CONTACTO -->
+  <<!-- CONTACTO -->
+<section id="contacto" class="seccion">
+  <div class="container">
+    <!-- Columna izquierda: Información -->
+    <div class="contacto-info">
+      <h2>¡Contáctanos!</h2>
+      <p>Comunícate con nosotros por correo, WhatsApp o completando el formulario.  
+      Te responderemos a la brevedad.</p>
 
-  <footer id="footer" class="bg-dark text-white text-center py-4 animate__animated animate__fadeInUp">
+      <p>
+        Email:  aldanaavila@gmail.com<br>
+    
+       Telefono: +598 92 699 921<br>
+       Direccion: Ruta 73 S/N Las Flores, Maldonado.
+      </p>
+
+      <a href="https://wa.me/59899824493" target="_blank" class="btn btn-success">
+        Ir a WhatsApp
+      </a>
+    </div>
+
+    <!-- Columna derecha: Formulario -->
+    <div class="contacto-form">
+      <form>
+        <input type="text" placeholder="Nombre Completo" required>
+        <input type="email" placeholder="Correo Electrónico" required>
+        <textarea rows="4" placeholder="¿Cómo podemos ayudarte?" required></textarea>
+        <button type="submit">Enviar Mensaje</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+  <!-- FOOTER -->
+  <footer id="footer">
     <div class="container">
-      <p>&copy; 2025 Avila & Asociados Gestión Contable. Todos los derechos reservados.</p>
-      <div class="mt-2">
-        <a href="#" class="text-white me-3">LinkedIn</a>
-        <a href="#" class="text-white me-3">Facebook</a>
-        <a href="#" class="text-white">Instagram</a>
+      <p>&copy; 2025 Ávila & Asociados Gestión Contable. Todos los derechos reservados.</p>
+      <div class="redes mt-2">
+        <a href="#">LinkedIn</a>
+        <a href="#">Instagram</a>
       </div>
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
   <script src="Scripts.js"></script>
 </body>
 </html>
