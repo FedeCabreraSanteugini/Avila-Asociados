@@ -1,18 +1,17 @@
 :root {
-  --color-primario: #1a237e;
-  --color-secundario: #5c6bc0;
-  --color-claro: #ffffff;
-  --color-oscuro: #212121;
-  --color-texto: #424242;
-  --color-hover: #283593;
-  --color-fondo-claro: #f8f9fa;
+  --color-primario: #8C5E35;
+  --color-secundario: #BFB6AE;
+  --color-claro: #F2F2F2;
+  --color-oscuro: #595959;
+  --color-texto: #333333;
+  --color-hover: #A16B42;
 }
 
 body {
   font-family: "Poppins", "Segoe UI", sans-serif;
   background-color: var(--color-claro);
   color: var(--color-texto);
-  line-height: 1.7;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
 }
@@ -28,6 +27,32 @@ a {
   color: var(--color-primario);
   text-decoration: none;
   transition: color 0.3s ease;
+}
+
+#diferenciales ul {
+  list-style: none;
+  padding: 0;
+}
+
+#diferenciales li {
+  margin-bottom: 10px;
+}
+
+#testimonios blockquote {
+  font-style: italic;
+  margin: 0;
+  padding: 20px;
+  border-left: 5px solid var(--color-primario);
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#testimonios cite {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: var(--color-oscuro);
 }
 
 a:hover {
@@ -58,28 +83,23 @@ a:hover {
 }
 
 .seccion {
-  padding: 100px 0;
+  padding: 80px 0;
 }
 
 .seccion h2 {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   color: var(--color-primario);
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-
-#servicios h2 {
-  color: var(--color-oscuro);
+  font-size: 2rem;
 }
 
 .bg-light {
-  background-color: var(--color-fondo-claro) !important;
+  background-color: var(--color-claro) !important;
 }
 
 .accordion-button {
   background-color: var(--color-secundario);
-  color: var(--color-claro);
+  color: var(--color-texto);
   font-weight: 500;
   border: none;
   transition: all 0.3s ease;
@@ -88,16 +108,16 @@ a:hover {
 
 .accordion-button:hover {
   background-color: var(--color-hover);
-  color: var(--color-claro);
+  color: #fff;
 }
 
 .accordion-button:not(.collapsed) {
   background-color: var(--color-primario);
-  color: var(--color-claro);
+  color: #fff;
 }
 
 .accordion-body {
-  background-color: var(--color-claro);
+  background-color: #fff;
   border-left: 4px solid var(--color-primario);
   border-radius: 0 0 6px 6px;
   padding: 1.25rem;
@@ -110,14 +130,6 @@ a:hover {
   border-radius: 8px;
   margin-bottom: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-}
-
-#diferenciales, #testimonios {
-  color: var(--color-texto);
-}
-
-#diferenciales h2, #testimonios h2 {
-  color: var(--color-primario);
 }
 
 .btn-primario {
@@ -158,60 +170,10 @@ footer a:hover {
   background-color: rgba(17, 17, 17, 0.95);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
-}
 
-#contacto {
-  background: linear-gradient(rgba(26, 35, 126, 0.9), rgba(26, 35, 126, 0.9));
-  color: #ffffff;
-}
-
-#contacto h2 {
-  color: #ffffff;
-}
-
-.contact-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 40px;
-}
-
-.contacto-info {
-  flex: 1;
-  color: #f0f0f0;
-}
-
-.contacto-form {
-  flex: 1;
-  background: #ffffff;
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-.contacto-form input,
-.contacto-form textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-family: "Poppins", sans-serif;
-}
-
-.contacto-form button {
-  background-color: var(--color-primario);
-  color: #fff;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  font-weight: 500;
-  width: 100%;
-}
-
-.contacto-form button:hover {
-  background-color: var(--color-hover);
-  transform: translateY(-2px);
+  #contacto {
+  background:
+    linear-gradient(rgba(17, 17, 17, 0.6), rgba(17, 17, 17, 0.6)),
+    url("fondo-contacto.jpg") center/cover no-repeat;
+  color: var(--blanco);
 }
