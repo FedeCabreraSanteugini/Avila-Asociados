@@ -29,6 +29,32 @@ a {
   transition: color 0.3s ease;
 }
 
+#diferenciales ul {
+  list-style: none;
+  padding: 0;
+}
+
+#diferenciales li {
+  margin-bottom: 10px;
+}
+
+#testimonios blockquote {
+  font-style: italic;
+  margin: 0;
+  padding: 20px;
+  border-left: 5px solid var(--color-primario);
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#testimonios cite {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: var(--color-oscuro);
+}
+
 a:hover {
   color: var(--color-hover);
 }
@@ -146,7 +172,7 @@ footer a:hover {
   transition: all 0.3s ease;
 
   #contacto {
-  background: 
+  background:
     linear-gradient(rgba(17, 17, 17, 0.6), rgba(17, 17, 17, 0.6)),
     url("fondo-contacto.jpg") center/cover no-repeat;
   color: var(--blanco);

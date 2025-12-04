@@ -1,3 +1,7 @@
+window.onload = function() {
+  window.scrollTo(0, 0);
+}
+
 // Animaciones al hacer scroll
 document.addEventListener("DOMContentLoaded", () => {
   const animatedSections = document.querySelectorAll(".animate__animated");

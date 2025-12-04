@@ -154,6 +154,7 @@
 </section>
 
 
+
   <!-- DIFERENCIALES -->
   <section id="diferenciales" class="seccion animate__animated">
     <div class="container">
@@ -167,6 +168,7 @@
       </ul>
     </div>
   </section>
+
 
   <!-- TESTIMONIOS -->
   <section id="testimonios" class="seccion bg-light animate__animated">
@@ -184,7 +186,6 @@
   </section>
 
   <!-- CONTACTO -->
-  <<!-- CONTACTO -->
 <section id="contacto" class="seccion">
   <div class="container">
     <!-- Columna izquierda: Información -->
@@ -207,10 +208,16 @@
 
     <!-- Columna derecha: Formulario -->
     <div class="contacto-form">
-      <form>
-        <input type="text" placeholder="Nombre Completo" required>
-        <input type="email" placeholder="Correo Electrónico" required>
-        <textarea rows="4" placeholder="¿Cómo podemos ayudarte?" required></textarea>
+      <!--
+        INSTRUCCIONES PARA ACTIVAR EL FORMULARIO:
+        1. Reemplaza "TU_CORREO_AQUÍ" con tu dirección de correo electrónico.
+        2. La primera vez que alguien envíe el formulario, recibirás un correo de Formspree para confirmar tu dirección.
+        3. Una vez confirmado, empezarás a recibir los mensajes del formulario en tu bandeja de entrada.
+      -->
+      <form action="https://formspree.io/f/TU_CORREO_AQUÍ" method="POST">
+        <input type="text" name="name" placeholder="Nombre Completo" required>
+        <input type="email" name="email" placeholder="Correo Electrónico" required>
+        <textarea rows="4" name="message" placeholder="¿Cómo podemos ayudarte?" required></textarea>
         <button type="submit">Enviar Mensaje</button>
       </form>
     </div>
