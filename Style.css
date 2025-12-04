@@ -5,83 +5,44 @@
   --color-oscuro: #595959;
   --color-texto: #333333;
   --color-hover: #A16B42;
+  --blanco: #ffffff;
 }
 
 body {
-  font-family: "Poppins", "Segoe UI", sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: var(--color-claro);
   color: var(--color-texto);
   line-height: 1.6;
   margin: 0;
-  padding: 0;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: "Poppins", sans-serif;
+/* Titulos */
+h1, h2, h3 {
   font-weight: 600;
   color: var(--color-oscuro);
-  letter-spacing: 0.5px;
 }
 
-a {
-  color: var(--color-primario);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-#diferenciales ul {
-  list-style: none;
-  padding: 0;
-}
-
-#diferenciales li {
-  margin-bottom: 10px;
-}
-
-#testimonios blockquote {
-  font-style: italic;
-  margin: 0;
-  padding: 20px;
-  border-left: 5px solid var(--color-primario);
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-#testimonios cite {
-  display: block;
-  margin-top: 10px;
-  font-weight: bold;
-  color: var(--color-oscuro);
-}
-
-a:hover {
-  color: var(--color-hover);
-}
-
-.container {
-  max-width: 1100px;
-}
-
+/* Navbar */
 .navbar {
   background-color: var(--color-oscuro) !important;
   padding: 0.75rem 1rem;
 }
 
-.navbar-brand img {
-  height: 40px;
-}
-
 .nav-link {
   color: var(--color-claro) !important;
   font-weight: 500;
-  transition: color 0.3s ease;
 }
 
 .nav-link:hover {
   color: var(--color-secundario) !important;
 }
 
+.navbar.fixed-top.scrolled {
+  background-color: rgba(17, 17, 17, 0.95) !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Secciones */
 .seccion {
   padding: 80px 0;
 }
@@ -89,91 +50,77 @@ a:hover {
 .seccion h2 {
   text-align: center;
   margin-bottom: 40px;
-  color: var(--color-primario);
   font-size: 2rem;
+  color: var(--color-primario);
 }
 
-.bg-light {
-  background-color: var(--color-claro) !important;
-}
-
+/* Accordion */
 .accordion-button {
   background-color: var(--color-secundario);
   color: var(--color-texto);
-  font-weight: 500;
-  border: none;
-  transition: all 0.3s ease;
-  box-shadow: none !important;
-}
-
-.accordion-button:hover {
-  background-color: var(--color-hover);
-  color: #fff;
 }
 
 .accordion-button:not(.collapsed) {
   background-color: var(--color-primario);
-  color: #fff;
+  color: var(--blanco);
 }
 
 .accordion-body {
-  background-color: #fff;
   border-left: 4px solid var(--color-primario);
-  border-radius: 0 0 6px 6px;
-  padding: 1.25rem;
-  color: var(--color-texto);
+  background-color: var(--blanco);
 }
 
-.accordion-item {
-  border: none;
-  background: var(--color-claro);
-  border-radius: 8px;
-  margin-bottom: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+/* Testimonios */
+#testimonios blockquote {
+  background-color: var(--blanco);
+  border-left: 5px solid var(--color-primario);
 }
 
-.btn-primario {
+/* Contacto */
+.contacto-bg {
+  background:
+    linear-gradient(rgba(17, 17, 17, 0.5), rgba(17, 17, 17, 0.5)),
+    url("fondo-contacto.jpg") center/cover no-repeat;
+  color: var(--blanco);
+  border-radius: 10px;
+}
+
+.contacto-info p {
+  font-size: 1.05rem;
+}
+
+.contacto-form {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid var(--color-secundario);
+}
+
+.contacto-form button {
   background-color: var(--color-primario);
-  color: #fff;
   border: none;
-  border-radius: 8px;
-  padding: 10px 20px;
-  transition: background-color 0.3s ease;
+  color: var(--blanco);
+  padding: 12px;
+  border-radius: 6px;
+  transition: 0.3s;
 }
 
-.btn-primario:hover {
+.contacto-form button:hover {
   background-color: var(--color-hover);
 }
 
+/* Footer */
 footer {
   background-color: var(--color-oscuro);
   color: var(--color-claro);
   padding: 40px 0;
-  text-align: center;
-  font-size: 0.95rem;
-}
-
-footer a {
-  color: var(--color-secundario);
-  transition: color 0.3s ease;
-}
-
-footer a:hover {
-  color: var(--color-claro);
-}
-
-.animate__animated {
-  animation-duration: 0.8s;
-  animation-fill-mode: both;
-}
-.navbar.fixed-top.scrolled {
-  background-color: rgba(17, 17, 17, 0.95);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease;
-
-  #contacto {
-  background:
-    linear-gradient(rgba(17, 17, 17, 0.6), rgba(17, 17, 17, 0.6)),
-    url("fondo-contacto.jpg") center/cover no-repeat;
-  color: var(--blanco);
 }
